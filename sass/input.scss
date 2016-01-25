@@ -1,0 +1,125 @@
+.input-nice {
+    
+      position: relative;
+      z-index: 1;     
+      width: 100%;
+      height: 4em;
+      vertical-align: top; 
+      display: block;
+      overflow: hidden;
+      margin: 1em auto 2em;
+      background: #EFEEEE;    
+    
+     .input-nice__field {
+
+          position: absolute;
+          display: block;
+          float: right;
+          top: 0;
+          right: 100%;
+          padding: 0.8em;
+          border: none;
+          border-radius: 0;
+          font-weight: bold;
+          width: 60%;
+          height: 100%;
+          background: #fff;
+          color: #9DABBA;
+          -webkit-appearance: none;
+          -webkit-transition: -webkit-transform 0.5s;
+          transition: transform 0.5s;
+          -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+          transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+
+          &:focus { outline: none; }
+     }
+    
+    
+    .input-nice__button {
+          -webkit-transition: -webkit-transform 0.5s;
+          transition: transform 0.5s;
+          -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.6, 0.8);
+          transition-timing-function: cubic-bezier(0.2, 1, 0.6, 0.8);
+          float: right;
+          right: 0;
+          top: 0;
+          height: 4em;
+          display: inline-block;
+          width: 40%;
+          background: transparent;
+          border: none;
+          font-size: 14px;
+          margin-right: -140%; 
+        }
+
+}
+
+ 
+
+
+
+.input-nice__label {
+  display: inline-block;
+  float: right;
+  padding: 0 1em;
+  width: 40%;
+  color: #555;
+  font-weight: lighter;
+  font-size: 14px;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  line-height: 4em; }
+
+.input-nice__label-content {
+  position: relative;
+  display: block;
+  width: 100%; }
+
+.graphic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  fill: none; }
+
+.icon {
+  color: #ddd;
+  font-size: 150%; }
+
+ 
+
+.input-nice__label  {
+  z-index: 10;
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  cursor: text;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+  transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1); }
+
+.input-nice__field:focus,
+.input-nice--filled .input-nice__field {
+  -webkit-transform: translate3d(100%, 0, 0);
+  transform: translate3d(100%, 0, 0);
+  -webkit-transition-delay: 0.06s;
+  transition-delay: 0.06s; }
+
+.input-nice__field:focus ~ .input-nice__button,
+.input-nice--filled .input-nice__button {
+  -webkit-transform: translate3d(-100%, 0em, 0);
+  transform: translate3d(-100%, 0, 0);
+  -webkit-transition-delay: 0.08s;
+  transition-delay: 0.08s; }
+
+.input-nice__field:focus + .input-nice__label,
+.input-nice--filled .input-nice__label  {
+  -webkit-transform: translate3d(60%, 0, 0);
+  transform: translate3d(60%, 0, 0);
+  pointer-events: none; }
