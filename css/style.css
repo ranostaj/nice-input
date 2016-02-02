@@ -1,6 +1,8 @@
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: rgba(194, 127, 255, 0.61);
+  font-size: 14px; }
 
 .container {
   width: 500px;
-  margin: 30% auto; }
+  margin: 20% auto; }

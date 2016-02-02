@@ -7,14 +7,13 @@
   display: block;
   overflow: hidden;
   margin: 1em auto 2em;
-  background: #EFEEEE; }
+  background: #EC008C; }
   .input-nice .input-nice__field {
     position: absolute;
     display: block;
-    float: right;
     top: 0;
     right: 100%;
-    padding: 0.8em;
+    padding: 0 0.8em 0 0.8em;
     border: none;
     border-radius: 0;
     font-weight: bold;
@@ -26,7 +25,10 @@
     -webkit-transition: -webkit-transform 0.5s;
     transition: transform 0.5s;
     -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
-    transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1); }
+    transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
     .input-nice .input-nice__field:focus {
       outline: none; }
   .input-nice .input-nice__button {
@@ -34,25 +36,28 @@
     transition: transform 0.5s;
     -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.6, 0.8);
     transition-timing-function: cubic-bezier(0.2, 1, 0.6, 0.8);
-    float: right;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    position: absolute;
+    cursor: pointer;
+    z-index: 100;
     right: 0;
     top: 0;
-    height: 4em;
+    height: 100%;
     display: inline-block;
     width: 40%;
-    background: transparent;
-    border: none;
-    font-size: 14px;
-    margin-right: -140%; }
+    background: #4527a0;
+    color: #fff;
+    border: none; }
+    .input-nice .input-nice__button:hover {
+      background: #614DA0; }
 
 .input-nice__label {
   display: inline-block;
-  float: right;
-  padding: 0 1em;
+  padding: 0;
   width: 40%;
   color: #555;
   font-weight: lighter;
-  font-size: 14px;
   -moz-osx-font-smoothing: grayscale;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -62,20 +67,12 @@
   user-select: none;
   line-height: 4em; }
 
-.input-nice__label-content {
+.input-nice__label__content {
   position: relative;
   display: block;
-  width: 100%; }
-
-.graphic {
-  position: absolute;
-  top: 0;
-  left: 0;
-  fill: none; }
-
-.icon {
-  color: #ddd;
-  font-size: 150%; }
+  padding: 0 0.8em 0 0.8em;
+  width: 100%;
+  height: 100%; }
 
 .input-nice__label {
   z-index: 10;
@@ -87,7 +84,9 @@
   -webkit-transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
   -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
-  transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1); }
+  transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+  color: #fff;
+  line-height: 55px; }
 
 .input-nice__field:focus,
 .input-nice--filled .input-nice__field {
@@ -98,8 +97,8 @@
 
 .input-nice__field:focus ~ .input-nice__button,
 .input-nice--filled .input-nice__button {
-  -webkit-transform: translate3d(-100%, 0em, 0);
-  transform: translate3d(-100%, 0, 0);
+  -webkit-transform: translate3d(0%, 0em, 0);
+  transform: translate3d(0%, 0, 0);
   -webkit-transition-delay: 0.08s;
   transition-delay: 0.08s; }
 
